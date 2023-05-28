@@ -1,5 +1,5 @@
 # Cookie-Graber-BOF
-C or BOF file to extract WebKit master key to decrypt user cookie
+C or BOF file to extract WebKit master key to decrypt user cookie. The C code can be used to compile an executable or a bof script for Cobalt Strike.
 
 # Compiling
 
