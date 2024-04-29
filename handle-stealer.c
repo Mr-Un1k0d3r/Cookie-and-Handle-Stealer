@@ -52,7 +52,6 @@ VOID GetProcessPIDByName(CHAR *processName) {
 }
 
 VOID CopyDatabaseBruteForceHandleByPID(DWORD PID) {
-    //printf("chrome PID found %d\n", PID);
     DWORD i = 0x100;
     if(!IsNetworkService(PID)) {
         return;
